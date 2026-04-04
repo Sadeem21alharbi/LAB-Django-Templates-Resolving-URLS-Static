@@ -1,0 +1,27 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block title %} Google Home Page {% endblock %}
+
+{% block content %}
+    <main class=" content">
+            <div class="logo">
+               <img src="{% static 'images/google-logo.png' %}" alt="Google Logo"/>
+            </div>
+
+            <form class="search-box" action="https://www.google.com/search" method="GET">
+                <span class="material-symbols-outlined search-icon">search</span>
+
+                <input type="text" id="searchInput" name="q">
+
+                <img src="{% static 'images/mircophone.png' %}" class="icon mic">
+                <img src="{% static 'images/camera.png' %}" class="icon cam">
+            </form>
+
+            <div class="buttons">
+                <button href="#">Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+            <p class="Lang">Google offered in: <a style="color:rgb(11, 11, 152)">العربية</a></p>
+    </main>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block title %} Terms Of Service {% endblock %}
+
+{% block content %}
+    <div class ="terms-container">
+        <div class = "terms-img">
+            <img src="{% static 'images/termsOfServices.jpeg' %}" alt="Google ToS"/>
+        </div>
+
+        <div class ="terms-content">
+            <h1>Google Terms of Service</h1>
+            <p class ="date">
+                Effective 5 January 2022 | <a style="color: rgb(11, 11, 152);">Archived versions</a> | <a style="color:rgb(11, 11, 152)">Download PDF</a>
+            </p>
+            <p class = "country">
+                Country version: Saudi Arabia
+            </p>
+            <h2>
+                What's covered in these terms
+            </h2>
+            <p>
+                We know it's tempting to skip these Terms of Service, but it's important to establish What
+                you can expect from us as use Google services
+            </p>
+            <p>
+                Theses Terms of Service reflect the way that Google's business works, the laws that apply to our company
+                , and certain things that we've always believed to be true.
+            </p>
+
+        </div>
+    </div>
+    <br>
+    <br>
+{% endblock %}
