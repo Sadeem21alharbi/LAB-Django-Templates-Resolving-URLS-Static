@@ -60,13 +60,12 @@ body{
 
 .search-box input{
     width: 550px;
-    justify-content: center ;
-    align-items: center;
-    padding: 10px;
+    justify-content: center ; 
+    align-items: center; 
+    padding: 10px 50px 10px 45px;
     border-radius: 25px;
     border: 1px solid #ddd;
     outline: none;
-
 }
 
 .search-box{
